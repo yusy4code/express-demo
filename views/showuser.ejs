@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get User</title>
+    <style>
+        body {
+            background-color: #ccc;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        .container {
+            width:80%;
+            margin:0 auto;
+        }
+        .top {
+            margin-top:50px;
+        }
+        ul li {
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top"></div>
+    <div class="container">
+    <% if (user) { %>
+        <h2>User Detail:</h2>
+        <ul>
+            <li> User ID: <%= user.UID %> </li>
+            <li> User Name: <%= user.UNAME %> </li>
+        </ul>
+    <% } else { %>
+        <h2> User Not found </h2>
+    <% } %>
+        
+        <br>
+        <a href="/getuser">Go Back</a>
+        <a href="/getusers">View All Users</a>
+    </div>
+</body>
+
+</html>
+

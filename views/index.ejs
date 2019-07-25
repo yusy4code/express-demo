@@ -1,0 +1,13 @@
+<h1>Content from EJS by <%= names %></h1>
+
+<ul>
+    <% for(i=0; i<names.length; i++) { %>
+        <li> <%= names[i] %> </li>
+    <% } %>
+</ul>
+
+<ol>
+    <% names.forEach( function(name) { %>
+        <li> <%= name %> </li>
+    <% }) %>
+</ol>
